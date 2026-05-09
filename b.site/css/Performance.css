@@ -1,0 +1,104 @@
+/* ════════════════════════════════════════════════
+   Performance.css – Performance Page Styles
+   ════════════════════════════════════════════════ */
+
+/* SECTION BLOCKS */
+.section-block {
+    padding: 28px 32px;
+    text-align: left;
+}
+
+.section-block h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin: 0 0 12px 0;
+}
+
+.section-block p {
+    color: floralwhite;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* HIGHLIGHT – Emphasized text */
+.highlight {
+    background-color: olivedrab;
+    color: floralwhite;
+    padding: 1px 6px;
+    border-radius: 3px;
+}
+
+/* EXTERNAL LINKS */
+.ext-link {
+    color: antiquewhite;
+    font-size: 13px;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.ext-link:hover {
+    color: floralwhite;
+}
+
+/* HR LINE */
+hr {
+    border: none;
+    border-top: 1px solid olivedrab;
+    margin: 0 32px;
+}
+
+/* STATS GRID – Performance statistics */
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 20px 0;
+    border: 2px solid darkslategray;
+}
+
+.stat-card {
+    flex: 1;
+    padding: 20px 10px;
+    background-color: darkolivegreen;
+    border-right: 1px solid darkslategray;
+    text-align: center;
+}
+
+.stat-card:last-child {
+    border-right: none;
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    color: antiquewhite;
+    margin: 0 0 6px 0;
+}
+
+.stat-card p {
+    font-size: 12px;
+    color: floralwhite;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* STRONG TEXT */
+.strong-text {
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+/* TITLE ACCENT */
+.title-accent {
+    color: antiquewhite;
+    font-style: italic;
+}
+
+/* FOOTER AUTHOR */
+.footer-author {
+    color: brown;
+    font-weight: bold;
+}

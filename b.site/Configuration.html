@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Koenigsegg CCXR Fan Site – Configuration Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg CCXR – Configuration</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/Configuration.css">
+</head>
+<body>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="Performance.html">PERFORMANCE</a></li>
+                <li><a href="Configuration.html" class="active">CONFIGURATION</a></li>
+                <li class="dropdown-parent">
+                    <a href="#">MORE &#9660;</a>
+                    <ul class="dropdown">
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
+    <header class="container_fluid">
+        <div class="container_fluid">
+            <a href="gallery.html" title="View Gallery">
+                <img src="image/Koenigsegg_CCXR_final.jpg"
+                     alt="Koenigsegg CCXR"
+                     id="car"
+                     width="900"
+                     height="350" />
+            </a>
+        </div>
+    </header>
+
+    <!-- ═══ TITLE STRIP ═══ -->
+    <div class="strip container_fluid">
+        <div class="container">
+            <h1>CONFIGURATION &nbsp;<span class="title-accent">CCXR</span></h1>
+            <p class="strip-sub">Build choices, options &amp; style inspiration</p>
+        </div>
+    </div>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <main class="container_fluid">
+        <div class="container">
+
+            <section class="section-block">
+                <h2>Pick Your Style</h2>
+                <hr />
+                <br />
+
+                <p>
+                    This is a simple configuration mockup. Use it to plan your perfect CCXR combination.
+                </p>
+
+                <div class="form-wrapper">
+                    <form>
+                        <div class="field">
+                            <label for="color">Exterior Color</label>
+                            <select id="color" name="color">
+                                <option value="trevita">Trevita (Diamond-Weave White)</option>
+                                <option value="obsidian">Obsidian Black</option>
+                                <option value="storm">Storm Grey</option>
+                                <option value="emerald">Emerald Green</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Carbon Package</label>
+                            <div class="radio-row">
+                                <label><input type="radio" name="carbon" value="full" checked /> Full Carbon</label>
+                                <label><input type="radio" name="carbon" value="sport" /> Sport Trim</label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Drive Mode</label>
+                            <div class="check-col">
+                                <label><input type="checkbox" name="mode" value="track" /> Track</label>
+                                <label><input type="checkbox" name="mode" value="sport" /> Sport</label>
+                                <label><input type="checkbox" name="mode" value="street" checked /> Street</label>
+                            </div>
+                        </div>
+
+                        <button class="btn-submit" type="button">Save My Build</button>
+                        <button class="btn-reset" type="reset">Reset</button>
+                    </form>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- ── SEARCH FORM GET METHOD ── -->
+            <section class="section-block">
+                <h2>Search CCXR Information</h2>
+                <p>Use the search below to find information about Koenigsegg models:</p>
+                <form method="GET" action="" class="search-form">
+                    <div class="field">
+                        <label for="searchQuery">Search Query:</label>
+                        <input type="text" id="searchQuery" name="searchQuery" placeholder="e.g. engine, speed, price" />
+                    </div>
+                    <div class="field">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value="all">All</option>
+                            <option value="specs">Specifications</option>
+                            <option value="performance">Performance</option>
+                            <option value="design">Design</option>
+                            <option value="history">History</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Search</button>
+                    <button type="reset" class="btn-reset">Clear</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="container_fluid">
+        <div class="container" id="footer-content">
+            <hr />
+            <p>
+                Koenigsegg CCXR Fan Site &nbsp;|&nbsp;
+                Built by <span class="footer-author">Billy Jhon Hurboda</span>
+                &nbsp;|&nbsp; 2025
+            </p>
+            <p>
+                <a href="contact.html">Contact Me</a>
+                &nbsp;|&nbsp;
+                <a href="Home.html">Back to Top &#8593;</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

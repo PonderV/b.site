@@ -1,0 +1,168 @@
+/* ════════════════════════════════════════════════
+   Configuration.css – Configuration Page Styles
+   ════════════════════════════════════════════════ */
+
+/* SECTION BLOCKS */
+.section-block {
+    padding: 28px 32px;
+    text-align: left;
+}
+
+.section-block h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin: 0 0 12px 0;
+}
+
+.section-block p {
+    color: floralwhite;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* FORM WRAPPER */
+.form-wrapper {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/* FORM FIELDS */
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    color: antiquewhite;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* SELECT DROPDOWN */
+.field select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: floralwhite;
+    color: darkslategray;
+    border: 1px solid olivedrab;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.field select:hover {
+    border-color: antiquewhite;
+}
+
+.field select:focus {
+    outline: 2px solid antiquewhite;
+    outline-offset: 2px;
+}
+
+/* RADIO & CHECKBOX CONTAINERS */
+.radio-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.check-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* RADIO BUTTONS & CHECKBOXES */
+.field input[type="radio"],
+.field input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: antiquewhite;
+}
+
+.field label input[type="radio"],
+.field label input[type="checkbox"] {
+    display: inline;
+}
+
+.radio-row label,
+.check-col label {
+    display: flex;
+    align-items: center;
+    color: floralwhite;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0;
+}
+
+.radio-row label:hover,
+.check-col label:hover {
+    color: antiquewhite;
+}
+
+/* BUTTONS */
+.btn-submit {
+    background-color: olivedrab;
+    color: floralwhite;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #9fb500;
+    color: darkslategray;
+}
+
+.btn-reset {
+    background-color: darkslategray;
+    color: floralwhite;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-reset:hover {
+    background-color: #5a6e6e;
+}
+
+/* HR LINE */
+hr {
+    border: none;
+    border-top: 1px solid olivedrab;
+    margin: 0 32px;
+}
+
+/* TITLE ACCENT */
+.title-accent {
+    color: antiquewhite;
+    font-style: italic;
+}
+
+/* FOOTER AUTHOR */
+.footer-author {
+    color: brown;
+    font-weight: bold;
+}

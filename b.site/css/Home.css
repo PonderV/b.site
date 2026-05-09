@@ -1,0 +1,200 @@
+/* ════════════════════════════════════════════════
+   Home.css – Home Page Specific Styles
+   ════════════════════════════════════════════════ */
+
+/* STATS GRID – Display key statistics in 4 columns */
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 20px 0;
+    border: 2px solid darkslategray;
+}
+
+.stat-card {
+    flex: 1;
+    padding: 20px 10px;
+    background-color: darkolivegreen;
+    border-right: 1px solid darkslategray;
+    text-align: center;
+}
+
+.stat-card:last-child {
+    border-right: none;
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    color: antiquewhite;
+    margin: 0 0 6px 0;
+}
+
+.stat-card p {
+    font-size: 12px;
+    color: floralwhite;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* CARDS GRID – Explore cards with images */
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: darkolivegreen;
+    border: 2px solid olivedrab;
+    padding: 12px;
+    width: 250px;
+    text-align: center;
+    transition: opacity 0.2s;
+}
+
+.card:hover {
+    opacity: 0.85;
+    border-color: antiquewhite;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h4 {
+    color: antiquewhite;
+    font-size: 16px;
+    margin: 10px 0 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: floralwhite;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* SECTION BLOCKS – Content sections */
+.section-block {
+    padding: 28px 32px;
+    text-align: left;
+}
+
+.section-block h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin: 0 0 12px 0;
+}
+
+.section-block h3 {
+    color: floralwhite;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.section-block h4 {
+    color: antiquewhite;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 0 14px;
+    letter-spacing: 1px;
+}
+
+.section-block h5 {
+    color: olivedrab;
+    font-size: 12px;
+    margin: 0 0 8px;
+}
+
+.section-block h6 {
+    color: #8aaa7a;
+    font-size: 11px;
+    margin: 10px 0 4px;
+}
+
+.section-block p {
+    color: floralwhite;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* HIGHLIGHT – Emphasized text */
+.highlight {
+    background-color: olivedrab;
+    color: floralwhite;
+    padding: 1px 6px;
+    border-radius: 3px;
+}
+
+/* EXTERNAL LINKS */
+.ext-link {
+    color: antiquewhite;
+    font-size: 13px;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.ext-link:hover {
+    color: floralwhite;
+}
+
+/* LISTS */
+.links-list {
+    list-style: disc;
+    padding-left: 28px;
+    margin: 10px 0;
+}
+
+.links-list li {
+    margin-bottom: 8px;
+}
+
+.links-list a {
+    color: antiquewhite;
+    font-size: 14px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.links-list a:hover {
+    text-decoration: underline;
+}
+
+.links-list a:visited {
+    color: #c8a87a;
+}
+
+/* HR LINE */
+hr {
+    border: none;
+    border-top: 1px solid olivedrab;
+    margin: 0 32px;
+}
+
+/* STRONG TEXT – For emphasized numbers */
+.strong-text {
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+/* TITLE ACCENT – For italicized brand name */
+.title-accent {
+    color: antiquewhite;
+    font-style: italic;
+}
+
+/* FOOTER AUTHOR NAME */
+.footer-author {
+    color: brown;
+    font-weight: bold;
+}

@@ -1,0 +1,129 @@
+/* ════════════════════════════════════════════════
+   gallery.css – Gallery Page Specific Styles
+   ════════════════════════════════════════════════ */
+
+/* GALLERY INTRO – Introduction section */
+.gallery-intro {
+    padding: 24px 32px 8px;
+    text-align: left;
+}
+
+.gallery-intro h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin: 0 0 10px 0;
+    border-left: 4px solid olivedrab;
+    padding-left: 10px;
+}
+
+.gallery-intro p {
+    color: floralwhite;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0 0 4px;
+}
+
+.gallery-intro .note-text {
+    color: antiquewhite;
+    font-size: 12px;
+}
+
+/* GALLERY SECTION LABELS */
+.gallery-section-label {
+    text-align: left;
+    padding: 20px 32px 6px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    border-top: 1px solid olivedrab;
+}
+
+/* GALLERY GRID LAYOUT */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* GALLERY CARD – Individual photo card */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid olivedrab;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.2s, border-color 0.2s;
+    text-decoration: none;
+}
+
+.gallery-card:hover {
+    opacity: 0.9;
+    border-color: antiquewhite;
+}
+
+/* Gallery card images */
+.gallery-card img {
+    display: block;
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+}
+
+/* Wide gallery cards (featured images) */
+.gallery-card.wide img {
+    width: 540px;
+    height: 170px;
+}
+
+/* GALLERY CAPTION – Text overlay on hover */
+.gallery-caption {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: antiquewhite;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    transition: bottom 0.25s;
+}
+
+.gallery-card:hover .gallery-caption {
+    bottom: 0;
+}
+
+/* PHOTO COUNT DISPLAY */
+.photo-count {
+    padding: 14px 32px;
+    text-align: right;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    border-top: 1px solid olivedrab;
+}
+
+/* HR STYLING */
+hr {
+    border: none;
+    border-top: 1px solid olivedrab;
+    margin: 0 32px;
+}
+
+/* NOTE TEXT */
+.note-text {
+    color: antiquewhite;
+    font-size: 12px;
+}
+
+/* FOOTER AUTHOR */
+.footer-author {
+    color: brown;
+    font-weight: bold;
+}

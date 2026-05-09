@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- Koenigsegg CCXR Fan Site – Home Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg CCXR – Home</title>
+
+    <!-- External CSS (Method 1) -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/Home.css">
+
+    <!-- Internal CSS (Method 2) -->
+    <style>
+        /* VIP section styling — shown only when password is correct */
+        #vipSection {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid antiquewhite;
+            border-radius: 4px;
+            padding: 20px 24px;
+            margin: 16px 0;
+            text-align: left;
+        }
+
+        #vipSection h3 {
+            color: antiquewhite;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0 0 10px;
+        }
+
+        #vipSection p {
+            color: floralwhite;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Price display paragraph */
+        #priceDisplay {
+            color: antiquewhite;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Car models list output */
+        #modelsList {
+            color: floralwhite;
+            font-size: 14px;
+            line-height: 1.9;
+            text-align: left;
+            padding: 8px 0;
+        }
+
+        /* Unlock VIP button */
+        #unlockBtn {
+            background-color: olivedrab;
+            color: floralwhite;
+            border: 2px solid darkslategray;
+            padding: 10px 24px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: 'Lucida Sans', Verdana, sans-serif;
+            margin: 8px 0;
+        }
+
+        #unlockBtn:hover {
+            background-color: antiquewhite;
+            color: brown;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="Home.html" class="active">HOME</a></li>
+                <li><a href="Performance.html">PERFORMANCE</a></li>
+                <li><a href="Configuration.html">CONFIGURATION</a></li>
+                <!-- Dropdown submenu (display:none shown on hover) -->
+                <li class="dropdown-parent">
+                    <a href="#">MORE &#9660;</a>
+                    <ul class="dropdown">
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
+    <header class="container_fluid">
+        <div class="container_fluid">
+            <!-- Image as a hyperlink (Method 3 inline: border on hover via CSS) -->
+            <a href="gallery.html" title="View Gallery">
+                <img src="image/Koenigsegg_CCXR_final.jpg"
+                     alt="Koenigsegg CCXR"
+                     id="car"
+                     width="900"
+                     height="350" />
+            </a>
+        </div>
+    </header>
+
+    <!-- ═══ TITLE STRIP ═══ -->
+    <div class="strip container_fluid">
+        <div class="container">
+            <!-- Inline CSS (Method 3) on the span -->
+            <h1>KOENIGSEGG &nbsp;<span style="color: antiquewhite; font-style: italic;">CCXR</span></h1>
+            <p class="strip-sub">Swedish Hypercar &nbsp;·&nbsp; Beyond All Limits</p>
+        </div>
+    </div>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <main class="container_fluid">
+        <div class="container">
+
+            <!-- ── INTRO SECTION ── -->
+            <section class="section-block">
+                <h2>Welcome</h2>
+                <hr />
+                <br />
+                <p>
+                    The <span class="highlight">Koenigsegg CCXR</span> is one of the most powerful
+                    production cars ever built. Engineered in Sweden with obsessive precision,
+                    it produces over <span class="strong-text">1,004 horsepower</span>
+                    running on biofuel — making it the first street-legal car to break the
+                    1,000 hp barrier on renewable energy.<br /><br />
+                    Every single car is hand-assembled at the Ängelholm factory by a small team
+                    of dedicated engineers. Fewer than&nbsp;50 units are produced each year.
+                </p>
+                <p>
+                    <a href="https://www.koenigsegg.com" target="_blank" class="ext-link">
+                        &#8599; Visit the official Koenigsegg website
+                    </a>
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- ── QUICK STATS ── -->
+            <section class="section-block">
+                <h2>Quick Stats</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>1,004</h3>
+                        <p>Horsepower</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2.9s</h3>
+                        <p>0 – 100 km/h</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>395</h3>
+                        <p>Top Speed km/h</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>1,180</h3>
+                        <p>Weight (kg)</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- ── EXPLORE CARDS (images as links) ── -->
+            <section class="section-block">
+                <h2>Explore</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="Performance.html">
+                            <img src="image/Koenigsegg_CCXR_final.jpg"
+                                 alt="Performance page"
+                                 width="250"
+                                 height="150" />
+                        </a>
+                        <h4>Performance</h4>
+                        <p>Engine specs, acceleration &amp; top speed data.</p>
+                    </div>
+                    <div class="card">
+                        <a href="Configuration.html">
+                            <img src="image/Koenigsegg_CCXR_final.jpg"
+                                 alt="Configuration page"
+                                 width="250"
+                                 height="150" />
+                        </a>
+                        <h4>Configuration</h4>
+                        <p>Build and customize your dream CCXR.</p>
+                    </div>
+                    <div class="card">
+                        <a href="gallery.html">
+                            <img src="image/Koenigsegg_CCXR_final.jpg"
+                                 alt="Gallery page"
+                                 width="250"
+                                 height="150" />
+                        </a>
+                        <h4>Gallery</h4>
+                        <p>Browse stunning photos of the CCXR.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- ── ABOUT SNIPPET (uses h1–h6) ── -->
+            <section class="section-block">
+                <h2>About The Car</h2>
+                <h3>The CCXR Trevita Edition</h3>
+                <h4>One of only 2 cars ever completed</h4>
+                <h5>Engine</h5>
+                <p>4.7-litre twin-supercharged V8 producing 1,004 hp on E85 biofuel.</p>
+                <h5>Carbon Body</h5>
+                <p>
+                    The Trevita edition features a unique <span class="highlight">diamond weave carbon fibre</span>
+                    that appears white and shimmering in sunlight — a process invented exclusively for this model.
+                </p>
+                <h6>Production note:</h6>
+                <p>
+                    Originally planned as 3 cars, only 2 were completed due to the extreme difficulty
+                    of the manufacturing process.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- ── JAVASCRIPT INTERACTIVE SECTION ── -->
+            <!-- These elements are used by home.js — keep them inside main > container -->
+            <section class="section-block">
+                <h2>Interactive</h2>
+
+                <!-- JS writes the car price into this element -->
+                <p id="priceDisplay"></p>
+
+                <!-- Car models list — JS writes here using a for loop + array -->
+                <div id="modelsList"></div>
+
+                <hr style="margin: 16px 0;" />
+
+                <!-- VIP section — hidden by default, shown by JS password check -->
+                <div id="vipSection" style="display: none;">
+                    <h3>&#128274;&nbsp; VIP Section — Unlocked</h3>
+                    <p>
+                        The CCXR Trevita sold for <strong>$4.8 million</strong> —
+                        one of the most expensive cars ever sold at auction.
+                        Only Christian von Koenigsegg knows the full buyer list.
+                    </p>
+                </div>
+
+                <!-- Button to trigger password check -->
+                <button id="unlockBtn" onclick="checkPassword()">
+                    &#128274;&nbsp; Unlock VIP Section
+                </button>
+
+            </section>
+
+            <hr />
+
+            <!-- ── VIDEO SECTION ── -->
+            <section class="section-block">
+                <h2>Video Overview</h2>
+                <p>Watch stunning Koenigsegg CCXR footage on YouTube:</p>
+                <div style="text-align: center; margin: 20px 0;">
+                    <a href="https://www.youtube.com/results?search_query=koenigsegg+ccxr" 
+                       target="_blank" 
+                       style="display: inline-block; background-color: olivedrab; color: floralwhite; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; letter-spacing: 1px; font-size: 14px; border: 2px solid darkslategray;">
+                        ▶ Watch CCXR Videos on YouTube
+                    </a>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- ── EXTERNAL LINKS ── -->
+            <section class="section-block">
+                <h2>Useful Links</h2>
+                <p>Top resources about the Koenigsegg CCXR:</p>
+
+                <!-- Ordered list -->
+                <ol class="links-list">
+                    <li>
+                        <a href="https://www.koenigsegg.com" target="_blank" class="ext-link">
+                            Official Koenigsegg Website
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Koenigsegg_CCXR" target="_blank" class="ext-link">
+                            Wikipedia – Koenigsegg CCXR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/results?search_query=koenigsegg+ccxr" target="_blank" class="ext-link">
+                            YouTube – CCXR Videos
+                        </a>
+                    </li>
+                </ol>
+
+                <!-- Unordered list -->
+                <p>Quick facts:</p>
+                <ul class="links-list">
+                    <li>Built in Ängelholm, Sweden</li>
+                    <li>Founded by Christian von Koenigsegg in 1994</li>
+                    <li>Fewer than 50 cars produced per year</li>
+                    <li>First street-legal car over 1,000 hp on biofuel</li>
+                </ul>
+            </section>
+
+        </div>
+        <!-- end .container -->
+
+    </main>
+    <!-- ↑ FIXED: </main> is now correctly here, AFTER all content -->
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="container_fluid">
+        <div class="container" id="footer-content">
+            <hr />
+            <p>
+                Koenigsegg CCXR Fan Site &nbsp;|&nbsp;
+                Built by <span class="footer-author">Billy Jhon Hurboda</span>
+                &nbsp;|&nbsp; 2025
+            </p>
+            <p>
+                <a href="contact.html">Contact Me</a>
+                &nbsp;|&nbsp;
+                <a href="Home.html">Back to Top &#8593;</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS goes here — fix path from js/ to java.script/ when ready -->
+    <script src="js/home.js"></script>
+
+</body>
+</html>

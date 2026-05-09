@@ -1,0 +1,113 @@
+/* ════════════════════════════════════════════════
+   contact.css – Contact Page Styles
+   ════════════════════════════════════════════════ */
+
+/* MAIN CONTENT AREA */
+main {
+    min-height: 400px;
+    background-color: darkolivegreen;
+}
+
+/* MAIN HEADING */
+main h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin: 20px 0 20px;
+    padding: 20px 32px 0;
+}
+
+/* CONTACT FORM */
+form {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 4px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* FORM GROUPS */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* FORM LABELS */
+form label {
+    display: block;
+    color: antiquewhite;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+/* FORM INPUTS */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    background-color: floralwhite;
+    color: darkslategray;
+    border: 1px solid olivedrab;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: 2px solid antiquewhite;
+    outline-offset: 2px;
+    border-color: antiquewhite;
+}
+
+/* TEXTAREA */
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* SUBMIT BUTTON */
+form input[type="submit"] {
+    background-color: olivedrab;
+    color: floralwhite;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9fb500;
+    color: darkslategray;
+}
+
+/* HR STYLING */
+hr {
+    border: none;
+    border-top: 1px solid olivedrab;
+    margin: 0 32px;
+}
+
+/* TITLE ACCENT */
+.title-accent {
+    color: antiquewhite;
+    font-style: italic;
+}
+
+/* FOOTER AUTHOR */
+.footer-author {
+    color: brown;
+    font-weight: bold;
+}

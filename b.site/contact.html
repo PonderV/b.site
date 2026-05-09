@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- Koenigsegg CCXR Fan Site – Contact Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg CCXR – Contact</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="Performance.html">PERFORMANCE</a></li>
+                <li><a href="Configuration.html">CONFIGURATION</a></li>
+                <li class="dropdown-parent">
+                    <a href="#">MORE &#9660;</a>
+                    <ul class="dropdown">
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html" class="active">CONTACT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
+    <header class="container_fluid">
+        <div class="container_fluid">
+            <img src="image/Koenigsegg_CCXR_final.jpg"
+                 alt="Koenigsegg CCXR"
+                 id="car"
+                 width="900"
+                 height="350" />
+        </div>
+    </header>
+
+    <!-- ═══ TITLE STRIP ═══ -->
+    <div class="strip container_fluid">
+        <div class="container">
+            <h1>CONTACT &nbsp;<span class="title-accent">US</span></h1>
+            <p class="strip-sub">Get in touch with questions or feedback</p>
+        </div>
+    </div>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <main class="container_fluid">
+        <div class="container">
+
+            <h2>Contact Us</h2>
+
+            <!--
+                POST method: sends form data in the request body (not visible in URL).
+                onsubmit calls validateForm() from contact.js.
+                If validateForm() returns false, the form does NOT submit.
+            -->
+            <form method="POST" action="" onsubmit="return validateForm()">
+
+                <!-- HIDDEN INPUT – required by the PDF, not visible to the user -->
+                <input type="hidden" name="formSource" value="contact-page" />
+
+                <!-- FIRST NAME -->
+                <div class="form-group">
+                    <label for="FName">First Name:</label>
+                    <input type="text" id="FName" name="FName" />
+                    <span id="msgBox7"></span>
+                </div>
+
+                <!-- LAST NAME -->
+                <div class="form-group">
+                    <label for="LastName">Last Name:</label>
+                    <input type="text" id="LastName" name="LastName" />
+                    <span id="msgBox8"></span>
+                </div>
+
+                <!-- USERNAME -->
+                <div class="form-group">
+                    <label for="userName">Username:</label>
+                    <input type="text" id="userName" name="userName" />
+                    <span id="msgBox1"></span>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+                    <label for="psw">Password:</label>
+                    <input type="password" id="psw" name="psw" />
+                    <span id="msgBox2"></span>
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="form-group">
+                    <label for="cnfm">Confirm Password:</label>
+                    <input type="password" id="cnfm" name="cnfm" />
+                    <span id="msgBox5"></span>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" />
+                    <span id="msgBox3"></span>
+                </div>
+
+                <!-- PHONE -->
+                <div class="form-group">
+                    <label for="phone">Phone (Israeli format):</label>
+                    <input type="text" id="phone" name="phone" placeholder="e.g. 050-1234567" />
+                    <span id="msgBox4"></span>
+                </div>
+
+                <!-- RADIO BUTTONS – user picks one subject -->
+                <div class="form-group">
+                    <label>Subject:</label>
+                    <label>
+                        <input type="radio" name="subject" value="general" checked />
+                        General Question
+                    </label>
+                    <label>
+                        <input type="radio" name="subject" value="feedback" />
+                        Feedback
+                    </label>
+                    <label>
+                        <input type="radio" name="subject" value="purchase" />
+                        Purchase Inquiry
+                    </label>
+                </div>
+
+                <!-- CHECKBOXES – user picks interests -->
+                <div class="form-group">
+                    <label>I am interested in:</label>
+                    <label>
+                        <input type="checkbox" name="interest" value="performance" />
+                        Performance
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="design" />
+                        Design
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="pricing" />
+                        Pricing
+                    </label>
+                </div>
+
+                <!-- SUBMIT, RESET, BUTTON – all three required by PDF -->
+                <div class="form-group">
+                    <input type="submit" value="Send Message" />
+                    <input type="reset" value="Reset Form" />
+                    <input type="button" value="Check Fields" onclick="validateForm()" />
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="container_fluid">
+        <div class="container" id="footer-content">
+            <hr />
+            <p>
+                Koenigsegg CCXR Fan Site &nbsp;|&nbsp;
+                Built by <span class="footer-author">Billy Jhon Hurboda</span>
+                &nbsp;|&nbsp; 2025
+            </p>
+            <p>
+                <a href="Home.html">Home</a>
+                &nbsp;|&nbsp;
+                <a href="Home.html">Back to Top &#8593;</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Link to validation script -->
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
